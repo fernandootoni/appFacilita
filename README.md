@@ -8,6 +8,6 @@ Ative o Apache e o MySQL usando o XAMPP, e abra seu projeto usando a URL "localh
 
 ![image](https://github.com/fernandootoni/appFacilita/assets/102544229/b79fecd2-145f-43d7-87f8-42638dd5060d)
 
-Navegue até o arquivo db.sql e utilize o codigo no terminal "type db.sql | mysql -u root -p"
+Usando o terminal, navegue até o arquivo db.sql e utilize o codigo "type db.sql | mysql -u root -p"
 
 Pronto, está tudo configurado para que você possa testar o projeto!
