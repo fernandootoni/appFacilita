@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+  <style>
+    .header{
+      font-size: 4rem;
+      color: rgb(74, 74, 87);
+      margin-bottom: 0;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="text-center mt-3 mb-3">
+    <a class="btn btn-primary" href="index.html">Usuário</a>
+    <a class="btn btn-primary" href="livro.html">Livro</a>
+    <a class="btn btn-primary" href="emprestimo.html">Emprestimo</a>
+  </header>
+  <h1 class="text-center header">Emprestimo</h1>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="mt-5 mb-3 text-center">Criar emprestimo</h1>
+        <form method="POST" action="./PHP/Emprestimo/cadastrar.php">
+          <div class="form-group mb-2">
+            <label for="usuario_reg">Numero de cadastro do usuário:</label>
+            <input name="usuario_reg" placeholder="Numero" type="number" class="form-control" required>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="livro_reg">Numero de cadastro do livro:</label>
+            <input name="livro_reg" placeholder="Numero" type="number" class="form-control" required>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="data">Data de devolução:</label>
+            <input name="data" placeholder="Data" type="date" class="form-control" required>
+          </div>
+
+          <div class="text-center mt-3">
+            <input class="btn btn-primary" type="submit" value="Cadastrar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="mt-5 mb-3 text-center">Atualizar situação</h1>
+        <form method="POST" action="./PHP/Emprestimo/atualizar.php">
+          <div class="form-group mb-2">
+            <label for="emprestimo_id">Numero de cadastro do emprestimo:</label>
+            <input name="emprestimo_id" placeholder="Numero" type="number" class="form-control" required>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="situacao">Situação: (Escreva Atrasado ou Devolvido)</label>
+            <input name="situacao" placeholder="Situação" type="text" class="form-control" required>
+          </div>
+
+          <div class="text-center mt-3">
+            <input class="btn btn-primary" type="submit" value="Cadastrar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="mt-5 mb-3 text-center">Obter emprestimo</h1>
+        <form method="GET" action="./PHP/Emprestimo/obter.php">
+          <div class="form-group mb-2">
+            <label for="emprestimo_id">Numero de cadastro do emprestimo:</label>
+            <input name="emprestimo_id" placeholder="Numero" type="number" class="form-control" required>
+          </div>
+          <div class="text-center mt-3">
+            <input class="btn btn-primary" type="submit" value="Cadastrar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
